@@ -27,4 +27,14 @@ The `dmwappushservice` service is required on client devices for Intune manageme
 
 To fix the issue, change the startup type of the `dmwappushservice` service to **Automatic**.
 
+## Cause 2
+
+The process %windir%\system32\omadmclient.exe is running for too long and stops responding
+
+## Solution 2
+
+Open Task manager by pressing CTRL + SHIFT + ESC, go to details tab, find the process omadmclient.exe and, right click on it and click "End", you might need to do it a couple of times.
+
+
+
 :::image type="content" source="media/cannot-sync-windows-10-devices/change-startup-type.png" alt-text="Screenshot shows steps to find the change startup type drop-down option.":::
